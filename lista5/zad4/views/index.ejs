@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "pl">
+    <head>
+        <meta charset="utf-8"/>
+        <title>print</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <style>
+            form{
+                padding: 2.5em;
+            }
+
+            .nil {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="GET" action="/print">
+            <h1>Formularz deklaracji</h1>
+            <div class="<%= (error ? 'alert alert-danger' : 'nil')%>" role="alert">
+                <%= error%>
+            </div>
+            <div class="form-group">
+                <label>Imię:</label>
+                <input type='text' class="form-control" name='name' value='<%= name%>'/>
+            </div>
+            <div class="form-group">
+                <label>Nazwisko:</label>
+                <input type='text' class="form-control" name='surname' value='<%= surname%>'/>
+            </div>
+            <div class="form-group">
+                <label>Przedmiot:</label>
+                <input type='text' class="form-control" name='subject' value='<%= subject%>'/>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-1"></div>
+                <div class="form-group col-md-2">
+                    zad1: <input type='text' class="form-control" name='zad1' value='<%= zad1%>'/>
+                </div>
+                <div class="form-group col-md-2">
+                    zad2: <input type='text' class="form-control" name='zad2' value='<%= zad2%>' />
+                </div>
+                <div class="form-group col-md-2">
+                    zad3: <input type='text' class="form-control" name='zad3' value='<%= zad3%>' />
+                </div>
+                <div class="form-group col-md-2">
+                    zad4: <input type='text' class="form-control" name='zad4' value='<%= zad4%>' />
+                </div>
+                <div class="form-group col-md-2">
+                    zad5: <input type='text' class="form-control" name='zad5' value='<%= zad5%>' />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-1"></div>
+                <div class="form-group col-md-2">
+                    zad6: <input type='text' class="form-control" name='zad6' value='' />
+                </div>
+                <div class="form-group col-md-2">
+                    zad7: <input type='text' class="form-control" name='zad7' value='' />
+                </div>
+                <div class="form-group col-md-2">
+                    zad8: <input type='text' class="form-control" name='zad8' value='' />
+                </div>
+                <div class="form-group col-md-2">
+                    zad9: <input type='text' class="form-control" name='zad9' value='' />
+                </div>
+                <div class="form-group col-md-2">
+                    zad10: <input type='text' class="form-control" name='zad10' value='' />
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </body>
+</html>

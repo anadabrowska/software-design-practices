@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "pl">
+    <head>
+        <meta charset="utf-8"/>
+        <title>print</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <style>
+            *{
+                padding: 3em;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="table table-bordered table-striped table-light">
+        <thead>
+            <tr>
+                <th colspan="2">PRZEDMIOT</th>
+                <th colspan="2"><%= subject%></th>
+                <th colspan="4">IMIĘ I NAZWISKO</th>
+                <th colspan="4"><%= name%>   <%= surname%></th>
+            </tr>
+        </thead>
+            <tr>
+                <th scope="col">ZADANIE</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+                <th scope="col">4</th>
+                <th scope="col">5</th>
+                <th scope="col">6</th>
+                <th scope="col">7</th>
+                <th scope="col">8</th>
+                <th scope="col">9</th>
+                <th scope="col">10</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <th scope="row">PUNKTY</th>
+                    <th><%= zad1%></th>
+                    <th><%= zad2%></th>
+                    <th><%= zad3%></th>
+                    <th><%= zad4%></th>
+                    <th><%= zad5%></th>
+                    <th><%= zad6%></th>
+                    <th><%= zad7%></th>
+                    <th><%= zad8%></th>
+                    <th><%= zad9%></th>
+                    <th><%= zad10%></th>
+                </tr>
+        </table>
+    </body>
+</html>
