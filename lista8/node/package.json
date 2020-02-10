@@ -1,0 +1,22 @@
+{
+  "name": "weppo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anadabrowska/software-design-practices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anadabrowska/software-design-practices/issues"
+  },
+  "homepage": "https://github.com/anadabrowska/software-design-practices#readme",
+  "dependencies": {
+    "pg": "^7.17.1"
+  }
+}
