@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Select your gender:</p>
+        <%- include('radio_btn', locals.gender ) %>
+        <form method="POST">
+            Wartość z ciastka1: <%= cookieValue %> 
+            <br>
+            Wartość z session: <%= sessionValue %>
+            <br>
+            <button>Zapisz</button>
+        </form>
+    </body>
+</html>
